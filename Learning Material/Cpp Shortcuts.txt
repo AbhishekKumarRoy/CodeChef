@@ -1,0 +1,460 @@
+.LOG
+11:42 PM 12/30/2017
+
+for(auto c : str_name)
+{....}									//to read char by char
+
+							
+1:56 AM 1/1/2018
+ pair <int,int> p;
+ queue < pair<int,int> > q;
+ cin>>a;
+ cin>>b;
+ p=make_pair(a,b);
+ q.push(p)
+
+
+1:57 AM 1/10/2018
+char digit to int
+string str;
+str='123455';
+int x=str[0]-'0';    //1 in int
+int x=str[1]-'0';    //2 in int
+
+1:21 AM 1/12/2018
+str="12.09."+to_string(year);                                   //int to string 
+								//header file <string.h>
+
+
+
+12:46 AM 1/28/2018
+ string s1(s);
+    reverse(s1.begin(),s1.end());                                  //reverse string
+
+int a=s2.find(s1[i]);
+            if(a!=string::npos)					//npos->not found or -1 in int
+                return "YES";
+
+10:09 PM 2/21/2018
+	
+	int a[] = {5 , 10 , 15} ;
+	cout << accumulate(a , a+3 , sum);				//to obtain sum in range
+or      cout << accumulate(a , a+3 , 0);
+
+
+
+1:45 AM 2/28/2018
+vector<int>::iterator itr=max_element(v.begin(),v.end());		//to print max element in vector
+cout<<*itr;
+
+
+1:49 AM 2/28/2018
+ASSERTION
+assert(length >= 0);							//to check error
+		//The assert computer statement is analogous to the statement make sure in English.
+assert(length >= 0 && "Whoops, length can't possibly be negative!");
+
+									//if false then this message error occurs
+11:48 PM 3/2/2018
+string berthType(int n) {
+    vector <string> v{"SUB","LB","MB","UB","LB","MB","UB","SLB"};			//101 hack 53
+    return v[n%8];
+}
+
+1:19 AM 3/3/2018
+sc.erase(unique(sc.begin(),sc.end()), sc.end() );		//to delete duplicate elements
+
+1:03 AM 3/4/2018
+int max_val=0;
+for....
+max_val=max(max_val,v[i]);
+
+
+
+
+12:45 AM 3/6/2018
+If moving in a circle take mod.
+eg. if there are n no. of people standing in circle queue then take mod by n to restart.
+
+
+1:09 AM 3/6/2018
+auto itr=find(v.begin(),v.end(),s);				//std::find in vector
+
+for(char c:string)
+        cout<<c-'A'+1;						//to print ASCII value of each char in string
+
+
+1:24 AM 3/9/2018
+Factorial of large integers!!!!!!!
+
+
+12:22 AM 3/28/2018
+vector <string> grid;						//becomes 2d matrix of string
+for(int i;i<grid.size();i++)
+    {
+        for(int j;j<grid[i].size();j++)
+        {
+                grid[i][j]='X';  				//to access each char of 2d string matrix    
+        }
+    }
+
+10:13 PM 4/3/2018
+sum to a range in vector
+USE STD::ACCUMULATE
+int sum=accumulate(arr.begin(),arr.end(),0);				//3rd parameter for initialization
+ll a=0;
+ll sum=accumulate(arr.begin(),arr.end(),a);				//return ans in third parameter 
+									//be careful while using long 
+
+12:52 AM 4/23/2018
+vector < vector<int> > v( row,vector <int> (col,0) );			        //Declaration of 2D vector
+
+
+9:31 PM 4/25/2018									//to repeateddly update array in a range low-high
+int low,high;
+vector <int> arr;
+while(t--)										//no of updates
+{
+	cin>>low>>high>>val;
+	arr[low]+=val;
+	arr[high+1]-=val;
+}
+int sum=0;
+for(int i=0;i<arr.size();i++)								//traverse array only once
+{
+	sum+=arr[i];
+	arr[i]=sum;
+}
+
+
+
+1:16 AM 4/28/2018
+str.erase(remove(str.begin(), str.end(), 'a'), str.end());				//remove all occurance of 'a' from string
+
+12:39 AM 5/6/2018
+For storing large number with decimals use
+long double 		
+
+1:35 AM 5/30/2018
+priority_queue <int> g;									//STL priority queue max at top
+g.top();
+g.pop();
+g.empty();
+
+
+1:37 AM 5/30/2018
+set <pair<int,int>> s;
+s.insert(make_pair(a,b));
+
+
+2:09 AM 6/6/2018
+algo>search>countLuck									//backtrack 
+
+
+1:15 AM 6/9/2018
+XOR 2^3^4^2^1^2^2^1^3=4 (pairs cancel out each other)
+
+
+2:02 AM 6/10/2018
+vector<int> V[] is an array of vectors.
+vector< vector<int> > V is a vector of vectors.
+When you want to work with a fixed number of std::vector elements, you can use vector <int> V[].
+When you want to work with a dynamic array of std::vector, you can use  vector< vector<int> > V.
+
+
+2:02 AM 6/10/2018
+vector<pair<int, int> > adj[V];							//Adjacency graph
+cin>>u>>v>>w;
+adj[u].push_back(make_pair(v, wt));
+adj[v].push_back(make_pair(u, wt));
+for (int u = 0; u < V; u++) 							//print
+    {   
+        for (auto it = adj[u].begin(); it!=adj[u].end(); it++)
+        {
+            v = it->first;
+            w = it->second;
+            cout<<u<<v<<w;
+        }
+    }
+
+
+2:08 AM 6/10/2018
+instead of vector<int>::iterator itr;
+use auto itr=v.begin();
+
+
+2:10 AM 6/12/2018
+set <int> s;
+maxV=max(maxV,(int)s.size());							//max will not work for s.size()
+
+
+
+
+1:59 AM 6/18/2018
+priority_queue <int> pq;							//max heap STL
+priority_queue <int, vector<int>, greater<int> > pq;				//min heap STL
+
+
+2:32 AM 7/13/2018
+distance(first itr,sec itr);							//no of elements b/w iterators
+
+
+1:41 AM 7/15/2018
+
+    q.push(1);									//BFS
+    visited[1]=1;
+    while(!q.empty())
+    {
+        int a=q.front();
+        q.pop();
+        
+        for(auto it=graph[a].begin();it!=graph[a].end();it++)
+        {
+            if(!visited[*it])
+            {
+                visited[*it]=1;
+                q.push(*it);
+            }
+        }
+    }
+
+
+    s.push(1);									//DFS
+    visited[1]=1;
+    while(!s.empty())
+    {
+        int a=s.top();
+        s.pop();
+        
+        for(auto it=graph[a].begin();it!=graph[a].end();it++)
+        {
+            if(!visited[*it])
+            {
+                visited[*it]=1;
+                s.push(*it);
+            }
+        }
+    }
+
+
+    
+1:16 AM 7/24/2018
+Most programming languages support the data structures for efficient searching in their library functions.
+For example, if you want to use a binary search tree in C++, you can use STL set O(logn);
+if you want to use a hash table in C++, you can use unordered_set O(1).
+
+
+
+
+2:36 AM 7/27/2018
+set<char>st;
+for(auto it=st.begin();it!=prev(st.end());it++)					//next & prev iterator
+for(auto j=next(it);j!=st.end();j++)
+
+1:41 AM 8/2/2018
+while (n)
+    {										//count of 0's in binary
+        //calculating count of zeros and ones
+        (n % 2 == 0) ? count0++ :count1++;
+        n /= 2;
+    }
+
+
+1:45 AM 8/3/2018
+Euclid algo for gcd or hcf.
+
+
+1:08 AM 8/7/2018
+multimap<int,int> mp;								//in multimap do not use mp[i]=n;
+mp.insert(pair <int, int> (n, i));						//use it for storing duplicate key
+											in sorted order...
+
+1:38 AM 8/9/2018
+char to integer s[i]-'0'
+int to char     s[i]+'0'							//do not use char(s[i])
+
+1:20 AM 8/18/2018
+ios_base::sync_with_stdio(false);						//for faster cin cout
+cin.tie(NULL);
+
+
+12:42 AM 9/10/2018
+priority_queue <Type, vector<Type>, ComparisonType > min_heap;			//Min heap
+eg.     priority_queue< pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+
+
+1:29 AM 9/14/2018
+To find connected components in a graph
+->DFS
+->BFS
+->Disjoint Set(DSU)
+
+
+5:20 PM 9/18/2018
+Alternative to iterate through map (STL)
+for(auto it=m.begin();it!=m.end();it++)
+	cout<<it->first<<" "<<it->second;
+for(auto it : m)
+	cout<<it.first<<" "<<it.second;
+
+
+1:10 AM 9/19/2018
+if(a[i]&1)                                                                          //Checks odd
+ans>>1										    //Divide ans by 2
+
+
+1:05 AM 9/25/2018
+--> subarray vs subsequence
+--> sum of all subsequence in array = (sum of array)*2^(n-1)
+
+  
+
+10:23 PM 9/29/2018
+x.lower_bound({first, -inf});							     //set<int,int> lower_bound
+x.upper_bound({first, inf});
+
+
+10:58 PM 11/5/2018
+memset(indexes,0,sizeof(indexes));						//will initialize index array with 0's
+
+string str="hello";
+memset(str,'c',sizeof(str));								//str=ccccc
+
+
+--> operations on unordered_set is faster than set :D
+
+
+1:30 AM 12/17/2018
+back_inserter used in set_union and vector_intersection
+std::set_intersection(v1.begin(),v1.end(),
+                          v2.begin(),v2.end(),
+                          back_inserter(v3));
+
+
+1:22 AM 3/4/2019
+INT to CHAR	
+int a=5;
+char c=a+'0';
+
+
+12:30 AM 3/21/2019
+Hand shake formula 
+No. of combinations=n(n-1)/2
+
+Use accumullate(v.begin() ,v.end(), 1LL*0) to handle LONG LONG	
+
+1:08 AM 4/16/2019
+Common error 
+ceil( n / 2) ----> X
+ceil( n / 2.0) 
+
+
+11:12 PM 4/21/2019
+v.erase(unique(v.begin(), v.end()), v.end());				Removes duplicate elements
+
+ 
+1:36 PM 4/23/2019
+To input string with spaces use
+cin.ignore();
+getline(cin, s);
+
+
+
+12:31 AM 5/26/2019
+__builtin_popcount(a); 							// Counts no. of set bits in an integer
+
+
+12:05 AM 5/27/2019
+Insertion in BST - O(n)
+Insertion self balanced BST - O(nlogn)
+
+
+5:52 PM 5/29/2019
+stable_sort								// if the order matters while sorting
+
+
+1:34 AM 6/7/2019
+char* token = strtok(s, " ");							//splitting a string based on delimeter
+
+Tokenize string in cpp -
+
+vector <string> tokens; 
+stringstream ss(line); 
+string word; 
+while(getline(ss, word, ' ')) 
+    tokens.push_back(word); 
+
+
+
+10:21 PM 6/18/2019
+priority_queue own comparitor-
+struct compare { 
+    
+	bool operator()(struct Node* a, struct Node* b) {
+	 
+        return a->data > b->data; 
+
+ } 
+};
+priority_queue<Node*, vector<Node*>, compare> pq;
+
+		OR
+
+struct CompareHeight { 
+    bool operator()(Person const& p1, Person const& p2) 
+    { 
+        return p1.height < p2.height; 
+    } 
+}; 
+priority_queue<Person, vector<Person>, CompareHeight> Q;
+
+
+2:58 PM 8/3/2019
+bool sortbysec(const pair<int,int> &a, 					// sort pair acc to second value
+              const pair<int,int> &b) 
+{ 
+    return (a.second < b.second); 
+} 
+
+
+11:04 PM 9/22/2019
+_gcd(a, b)								//inbuilt gcd function can be used to find LCM
+									//_gcd(0, 0) gives error
+
+
+1:33 AM 10/16/2019
+int find(vector<int>& ds, int i) { 						// fast find func in Union Find
+return ds[i] < 0 ? i : ds[i] = find(ds, ds[i]); }
+
+
+1:55 AM 11/5/2019
+nth_element in STL
+
+vector <int> v = { 3, 2, 10, 45, 33, 56, 23, 47 };
+nth_element(v.begin(), v.begin() + 4, v.end()); // 5th elem
+
+output : 3 2 10 23 33 56 45 47
+
+nth_element(v.begin(), v.begin() + v.size() / 2, v.end()); 		//for median
+cout << v[v.size() / 2];
+
+ 
+12:16 AM 11/8/2019
+regex_replace(subject, regex_object, replace_text)
+
+
+11:53 PM 11/9/2019
+unordered_set <char> J(s.begin(), s.end());				//to insert all character of string
+if(s.count(c))								//in place of s.find(c) != s.end()
+
+
+
+12:03 AM 1/13/2020
+find in string - to find substring or char  			//str.find('0') == str.end() will not work
+str.find('0') == string::npos or -1             //if nothing found else pos of first occurance will be returned
+
+
+
+7:04 PM 10/5/2020
+atan2(y2-y1, x2-x1)                       	// tan inv to get angle of slope
+

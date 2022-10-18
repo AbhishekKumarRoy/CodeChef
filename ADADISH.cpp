@@ -1,4 +1,4 @@
-## Link to problem: https://www.codechef.com/problems/ADADISH
+// Link to problem: https://www.codechef.com/problems/ADADISH
 
 #include<bits/stdc++.h>
 #define ll long long
